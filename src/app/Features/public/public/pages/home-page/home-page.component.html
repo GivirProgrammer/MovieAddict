@@ -1,0 +1,35 @@
+<!-- <h1>Welcome User here are some movies</h1> -->
+
+<div class="inner-container mt-8">
+
+  <a class="goLink">Go to popular movies</a>
+  <p-divider class="w-8"></p-divider>
+
+  <div class="grid col-12">
+    <div
+      class="card flex justify-content-center col-2"
+      *ngFor="let item of Movies.slice(0, 6)"
+    >
+      <p-card header="{{ item.title }}" class="h-18rem">
+        <ng-template pTemplate="header">
+          <img
+            src="https://image.tmdb.org/t/p/w500{{ item.backdrop_path }}"
+            alt=""
+          />
+        </ng-template>
+        <!-- <p class="m-0">
+          {{item.overview}}
+        </p> -->
+        <!-- <p-accordion>
+          <p-accordionTab header="Movie Description" >
+            {{item.overview}}
+          </p-accordionTab>
+        </p-accordion> -->
+        <ng-template pTemplate="footer">
+          <p-rating ngModel="{{item.vote_average/2}}" [readonly]="true" [cancel]="false"></p-rating>
+          <p>{{item.vote_average}}/10</p>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
+</div>

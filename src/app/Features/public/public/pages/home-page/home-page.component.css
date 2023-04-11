@@ -1,0 +1,32 @@
+:host ::ng-deep .p-card{
+  height: 300px;
+}
+
+:host ::ng-deep .p-card .p-card-title{
+  font-weight: 200;
+}
+
+.inner-container{
+  width: 80%;
+  margin: auto;
+
+}
+
+:host ::ng-deep .p-inputtext{
+  border-radius: 15px;
+}
+
+:host ::ng-deep .p-card .p-card-title{
+  font-size: 1.2rem;
+}
+
+:host ::ng-deep .p-card .p-card-content{
+  padding: 0;
+}
+
+.goLink{
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+}
+

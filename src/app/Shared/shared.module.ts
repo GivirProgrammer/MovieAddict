@@ -14,10 +14,13 @@ import { HeaderComponent } from './Components/header/header.component';
     RouterModule,
     PrimengModule,
     FormsModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   exports:[
-    HeaderComponent
+    HeaderComponent,
+    PrimengModule,
+    FormsModule
   ]
 })
 export class SharedModule { }

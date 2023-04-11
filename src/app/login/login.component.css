@@ -1,0 +1,18 @@
+:host ::ng-deep .p-card .p-card-title{
+  text-align: center;
+}
+
+
+:host ::ng-deep .p-card-header img{
+  width: 50%;
+  margin-left: 80px;
+}
+
+:host ::ng-deep .p-card{
+  background: #50135a;
+  border-radius: 19px;
+}
+
+:host ::ng-deep .p-button{
+  margin-left: 100px;
+}

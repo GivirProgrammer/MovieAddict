@@ -1,0 +1,26 @@
+<form [formGroup]="UserForm" (ngSubmit)="LoginUser()">
+  <p-card header="Login" [style]="{ width: '300px' }" styleClass="m-auto mt-8">
+    <ng-template pTemplate="header">
+      <img src="/assets/login.png" alt="" />
+    </ng-template>
+    <div class="p-inputgroup">
+      <span class="p-inputgroup-addon">
+        <i class="pi pi-user"></i>
+      </span>
+      <input pInputText  placeholder="UserName" formControlName="UserName"/>
+    </div>
+    <div class="p-inputgroup mt-4">
+      <span class="p-inputgroup-addon">
+        <i class="pi pi-lock"></i>
+      </span>
+      <input pInputText type="password" placeholder="Password" formControlName="Password"/>
+    </div>
+    <ng-template pTemplate="footer">
+      <p-button
+        type="submit"
+        label="Login"
+        styleClass="p-button-rounded p-button-success mt-4 "
+      ></p-button>
+    </ng-template>
+  </p-card>
+</form>
